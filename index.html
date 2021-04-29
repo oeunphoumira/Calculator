@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assetes/css/bootstrap.min.css">
     <link rel="stylesheet" href="assetes/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="assetes/css/style.css">
-    <link rel="icon" href="assetes/img/Admin.ico">
+    <link rel="icon" href="assetes/img/Calculator-icon.ico">
 </head>
 
 <body>
@@ -22,26 +22,26 @@
                     <input type="text" id="txtResult" readonly>
                 </div>
                 <div class="button">
-                    <button type="button" class="btn btn-secondary" id="clear">AC</button>
-                    <button type="button" class="btn btn-secondary">+/-</button>
+                    <button type="button" class="btn btn-secondary" id="clear" onclick="clearText()"><i class="fab fa-cuttlefish"></i></button>
+                    <button type="button" class="btn btn-secondary" id="squareRoot" onclick="squareRoot()"><i class="fas fa-square-root-alt"></i></button>
                     <button type="button" class="btn btn-secondary" id="percent"><i
                             class="fas fa-percentage"></i></button>
-                    <button type="button" class="btn btn-warning" id="div"><i class="fas fa-divide"></i></button>
-                    <button type="button" class="btn btn-dark" id="txtNum7">7</button>
-                    <button type="button" class="btn btn-dark" id="txtNum8">8</button>
-                    <button type="button" class="btn btn-dark" id="txtNum9">9</button>
-                    <button type="button" class="btn btn-warning" id="mul">x</button>
-                    <button type="button" class="btn btn-dark" id="txtNum4">4</button>
-                    <button type="button" class="btn btn-dark" id="txtNum5">5</button>
-                    <button type="button" class="btn btn-dark" id="txtNum6">6</button>
-                    <button type="button" class="btn btn-warning" id="sub"><i class="fas fa-minus"></i></button>
-                    <button type="button" class="btn btn-dark" id="txtNum1">1</button>
-                    <button type="button" class="btn btn-dark" id="txtNum2">2</button>
-                    <button type="button" class="btn btn-dark" id="txtNum3">3</button>
-                    <button type="button" class="btn btn-warning" id="sum"><i class="fas fa-plus"></i></button>
-                    <button type="button" class="btn btn-dark" id="zero">0</button>
-                    <button type="button" class="btn btn-dark" id="dot">,</button>
-                    <button type="button" class="btn btn-warning" id="exqual"><i class="fas fa-equals"></i></button>
+                    <button type="button" class="btn btn-warning" id="div" onclick="operator('/')"><i class="fas fa-divide"></i></button>
+                    <button type="button" class="btn btn-dark" id="txtNum7" onclick="number('7')">7</button>
+                    <button type="button" class="btn btn-dark" id="txtNum8" onclick="number('8')">8</button>
+                    <button type="button" class="btn btn-dark" id="txtNum9" onclick="number('9')">9</button>
+                    <button type="button" class="btn btn-warning" id="mul" onclick="operator('*')"><i class="fas fa-times"></i></button>
+                    <button type="button" class="btn btn-dark" id="txtNum4" onclick="number('4')">4</button>
+                    <button type="button" class="btn btn-dark" id="txtNum5" onclick="number('5')">5</button>
+                    <button type="button" class="btn btn-dark" id="txtNum6" onclick="number('6')">6</button>
+                    <button type="button" class="btn btn-warning" id="sub" onclick="operator('-')"><i class="fas fa-minus"></i></button>
+                    <button type="button" class="btn btn-dark" id="txtNum1" onclick="number('1')">1</button>
+                    <button type="button" class="btn btn-dark" id="txtNum2" onclick="number('2')">2</button>
+                    <button type="button" class="btn btn-dark" id="txtNum3" onclick="number('3')">3</button>
+                    <button type="button" class="btn btn-warning" id="sum" onclick="operator('+')"><i class="fas fa-plus"></i></button>
+                    <button type="button" class="btn btn-dark" id="zero" onclick="number('0')">0</button>
+                    <button type="button" class="btn btn-dark" id="dot" onclick="number('.')">,</button>
+                    <button type="button" class="btn btn-warning" id="exqual" onclick="exqual()"><i class="fas fa-equals"></i></button>
                 </div>
             </div>
         </div>
